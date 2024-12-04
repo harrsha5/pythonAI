@@ -2,15 +2,16 @@ str = "test1 test2 test3"
 x= str.split()
 print(x, type(x))
 # when you split a string and store in a variable, it becomes a list type
-# lists in poython can be defined by list() or []
+# lists in python can be defined by list() or []
 str1 = "Please learn Python to reach greater heights"
 stuff = str1.split()
+print("stuff", stuff)
 count = 0
 for w in stuff:
     if(count==len(stuff)-1):
         print(w)
     else:
-        print(w, end=",\n") # removing the comma (,) at the last word
+        print(w) # removing the comma (,) at the last word
     count = count +1
 
 print(len(str1))
